@@ -20,6 +20,11 @@
 	</properties>
 
 	<dependencies>
+		<!-- 给springBoot接口增加全局日志AOP 2019-05-18 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>com.framework</groupId>
 			<artifactId>framework-common</artifactId>
