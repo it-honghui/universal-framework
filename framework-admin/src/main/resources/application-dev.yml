@@ -3,14 +3,14 @@ spring:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
         druid:
-            first:  #数据源1
+            first:  #数据源1 root 666666
                 url: jdbc:mysql://localhost:3306/framework?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-                username: root
-                password: 666666
-            second:  #数据源2
+                username: ENC(sFO/ZbCQV2xDdlRDpEhEAA==)
+                password: ENC(7CahjCEWXF13ViGZq9ES1Q==)
+            second:  #数据源2 root 666666
                 url: jdbc:mysql://localhost:3306/framework?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-                username: root
-                password: 666666
+                username: ENC(sFO/ZbCQV2xDdlRDpEhEAA==)
+                password: ENC(7CahjCEWXF13ViGZq9ES1Q==)
             initial-size: 10
             max-active: 100
             min-idle: 10
@@ -36,3 +36,7 @@ spring:
                 wall:
                     config:
                         multi-statement-allow: true
+#加密key
+jasypt:
+    encryptor:
+        password: wanghonghui
