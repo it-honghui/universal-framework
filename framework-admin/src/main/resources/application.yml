@@ -12,7 +12,7 @@ server:
 spring:
     # 环境 dev|test|prod
     profiles:
-        active: dev
+        active: prod
     servlet:
         multipart:
             max-file-size: 100MB
@@ -73,7 +73,7 @@ mybatis-plus:
 
 #项目部署使用日志级别为info,本地调式使用debug
 logging:
-  level: debug
-  level.com.framework: debug
+  level: info
+  level.com.framework: info
   path: framework-admin/logs/
   file: admin.log
